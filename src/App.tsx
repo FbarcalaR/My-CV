@@ -7,10 +7,12 @@ import Studies from './components/Sections/Studies/Studies';
 import Skills from './components/Sections/Skills/Skills';
 import Projects from './components/Sections/Projects/Projects';
 import AboutMe from './components/Sections/AboutMe/AboutMe';
+import NavBar from './components/UI/NavBar/NavBar';
 
 function App() {
   return (
     <div className="App">
+      <NavBar/>
       <PageSection>
         <Home />
       </PageSection>
