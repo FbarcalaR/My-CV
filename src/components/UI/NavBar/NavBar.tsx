@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <div className={classes.homeContainer}>
       <NavBarButton>
-        <FontAwesomeIcon icon={faHome} style={{cursor:'pointer'}}/> {/* <--- POINTER NOT WORKING (CHECK MODULES .CSS, buttonStyle CLASS)*/}
+        <FontAwesomeIcon icon={faHome}/>
       </NavBarButton>
       <div className={classes.mainContainer}>
         <NavBarButton>
