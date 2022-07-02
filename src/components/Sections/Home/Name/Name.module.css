@@ -1,0 +1,10 @@
+.name {
+    display: flex;
+    width: 276px;
+    justify-content: left;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 100%;
+}

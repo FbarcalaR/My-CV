@@ -1,16 +1,15 @@
 import React, { FunctionComponent } from 'react';
-import classes from "./NavBar.module.css";
+import classes from "./NavBarButton.module.css";
 
 type Props = {
-  className?: string;
   children?: React.ReactNode
 };
 
 const NavBarButton: FunctionComponent<Props> = (props) => {
   return (
-    <div className={[classes.buttonStyle, props.className].join(' ')}>
+    <button className={classes.buttonStyle}>
       {props.children}
-    </div>
+    </button>
   );
 }
 

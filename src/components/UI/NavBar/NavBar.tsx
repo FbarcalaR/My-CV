@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBarButton from './NavBarButton';
+import NavBarButton from './NavBarButton/NavBarButton';
 import classes from "./NavBar.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'

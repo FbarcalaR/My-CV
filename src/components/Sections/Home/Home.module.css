@@ -1,0 +1,11 @@
+.presentation-block {
+    display: flex;
+}
+
+.buttons-block {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    align-items: flex-start;
+    gap: 145px;
+}
