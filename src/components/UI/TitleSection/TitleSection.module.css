@@ -1,0 +1,17 @@
+.title-font {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 27px;
+}
+
+.title-font b{
+    color: #61D8D8;
+}
+
+.title-icon {
+    width: 35px;
+    height: 35px;
+    padding-right: 35px;
+    color: #61D8D8;
+}

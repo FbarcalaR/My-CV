@@ -1,0 +1,33 @@
+.job-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.job-title {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+    padding-bottom: 10px;
+
+    color: #FFFFFF;
+}
+
+.job-date {
+    font-style: italic;
+    font-size: 15px;
+    line-height: 18px;
+    
+    color: #AAAAAA;
+}
+
+.job-body {
+    width: 48%;
+
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    
+    color: #E0E0E0;
+}
