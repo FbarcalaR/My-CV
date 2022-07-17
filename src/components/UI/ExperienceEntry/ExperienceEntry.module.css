@@ -1,10 +1,10 @@
-.job-header {
+.experience-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.job-title {
+.experience-title {
     font-style: normal;
     font-size: 20px;
     line-height: 23px;
@@ -13,7 +13,7 @@
     color: #FFFFFF;
 }
 
-.job-date {
+.experience-date {
     font-style: italic;
     font-size: 15px;
     line-height: 18px;
@@ -21,8 +21,8 @@
     color: #AAAAAA;
 }
 
-.job-body {
-    width: 48%;
+.experience-body {
+    /* max-width: 65%; */
 
     font-size: 17px;
     line-height: 20px;
