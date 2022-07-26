@@ -1,0 +1,11 @@
+.languages-section-container {
+    width: 19%;
+    /* height: 50%; */
+}
+
+.languages-list-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

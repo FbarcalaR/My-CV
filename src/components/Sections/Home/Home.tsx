@@ -8,7 +8,7 @@ import { faEnvelope, faLocationDot, faPlugCircleBolt } from '@fortawesome/free-s
 
 const Home = () => {
     return (
-        <>
+        <div>
             <div className={classes['presentation-block']}>
                 <Name>FERNANDO BARCALA RODRIGUEZ</Name>
                 <Divider></Divider>
@@ -20,7 +20,7 @@ const Home = () => {
                 <FontAwesomeButton icon={faPlugCircleBolt}></FontAwesomeButton>
                 <FontAwesomeButton icon={faPlugCircleBolt}></FontAwesomeButton>
             </div>
-        </>
+        </div>
     );
 }
 

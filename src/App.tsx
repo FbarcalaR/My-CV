@@ -4,10 +4,12 @@ import './App.css';
 import Home from './components/Sections/Home/Home';
 import Experience from './components/Sections/Experience/Experience';
 import Studies from './components/Sections/Studies/Studies';
-import Skills from './components/Sections/Skills/Skills';
 import Projects from './components/Sections/Projects/Projects';
 import AboutMe from './components/Sections/AboutMe/AboutMe';
 import NavBar from './components/UI/NavBar/NavBar';
+import Technologies from './components/Sections/Technologies/Technologies';
+import Languages from './components/Sections/Languages/Languages';
+import ElementListDivider from './components/UI/ListElementDivider/ElementListDivider';
 
 function App() {
   return (
@@ -23,7 +25,9 @@ function App() {
         <Studies />
       </PageSection>
       <PageSection>
-        <Skills />
+        <Technologies />
+        <ElementListDivider />
+        <Languages />
       </PageSection>
       <PageSection>
         <Projects />

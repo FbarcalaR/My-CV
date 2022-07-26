@@ -1,0 +1,22 @@
+.filling {
+    background-color: black;
+    color: black;
+    position: absolute;
+    z-index: 1;
+}
+
+.filled-stars-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.void-stars-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.void-stars {
+    z-index: 2;
+}
