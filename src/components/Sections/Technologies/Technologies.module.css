@@ -1,8 +1,5 @@
 .technologies-section-container {
-    width: 39%;
-    /* height: 50%; */
-
-    margin-right: 2%;
+    min-width: 40%;
 }
 
 .technologies-list-container {
@@ -10,5 +7,4 @@
     flex-wrap: wrap;
     height: 100%;
     justify-content: flex-start;
-    align-content: stretch;
 }

@@ -1,6 +1,5 @@
 .languages-section-container {
-    width: 19%;
-    /* height: 50%; */
+    min-width: 20%;
 }
 
 .languages-list-container {

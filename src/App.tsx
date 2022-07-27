@@ -26,7 +26,6 @@ function App() {
       </PageSection>
       <PageSection>
         <Technologies />
-        <ElementListDivider />
         <Languages />
       </PageSection>
       <PageSection>

@@ -9,8 +9,8 @@ const Languages = () => {
         <div className={classes['languages-section-container']}>
             <TitleSection icon={faLanguage} title={'Skills/'} subtitle={'Languages'} />
             <div className={classes['languages-list-container']}>
-                <Language name={'Spanish'} rating={0.83}></Language>
-                <Language name={'English'} rating={0.83}></Language>
+                <Language name={'Spanish'} ratingPercentage={100}></Language>
+                <Language name={'English'} ratingPercentage={80}></Language>
             </div>
         </div>
     );
