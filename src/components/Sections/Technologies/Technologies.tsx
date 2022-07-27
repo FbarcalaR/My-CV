@@ -1,6 +1,6 @@
 import React from 'react';
 import TitleSection from '../../UI/TitleSection/TitleSection';
-import { faCode, faLanguage } from '@fortawesome/free-solid-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 import classes from './Technologies.module.css';
 import Technology from './Technology/Technology';
 

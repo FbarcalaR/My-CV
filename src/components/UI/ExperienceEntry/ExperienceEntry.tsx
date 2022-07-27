@@ -16,7 +16,9 @@ const ExperienceEntry: FunctionComponent<Props> = (props) => {
                 <span className={classes['experience-date']}>{props.date}</span>
             </div>
             <div className={classes['experience-body']}>
-                {props.children}
+                <p>
+                    {props.children}
+                </p>
             </div>
         </>
     );
