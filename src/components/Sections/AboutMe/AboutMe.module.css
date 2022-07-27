@@ -1,0 +1,14 @@
+.about-me-container {
+    display: flex;
+    max-width: 40%;
+    align-items: center;
+}
+
+.about-me-container>img {
+    width: 40%;
+    height: 100%;
+}
+
+.about-me-container>p {
+    margin-left: 20%;
+}
