@@ -10,7 +10,7 @@ const Tooltip: FunctionComponent<Props> = (props) => {
     return (
         <div className={classes['tooltip']} >
             {props.children}
-            <span className={classes['tooltip-text']} >{props.body}</span>
+            <p className={classes['tooltip-text']} >{props.body}</p>
         </div>
     );
 }
