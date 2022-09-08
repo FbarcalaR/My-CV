@@ -1,29 +1,33 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import NavBarButton from './NavBarButton/NavBarButton';
 import classes from "./NavBar.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 
-const NavBar = () => {
+interface Props {
+  defaultSectionKey: string;
+};
+
+const NavBar: FunctionComponent<Props> = (props) => {
   return (
     <div className={classes.homeContainer}>
-      <NavBarButton>
+      <NavBarButton id='HOME' >
         <FontAwesomeIcon icon={faHome}/>
       </NavBarButton>
       <div className={classes.mainContainer}>
-        <NavBarButton>
+        <NavBarButton  id='EXPERIENCE' usesDecorators={true}>
           EXPERIENCE
         </NavBarButton>
-        <NavBarButton>
+        <NavBarButton  id='STUDIES' usesDecorators={true}>
           STUDIES
         </NavBarButton>
-        <NavBarButton>
+        <NavBarButton  id='SKILLS' usesDecorators={true}>
           SKILLS
         </NavBarButton>
-        <NavBarButton>
+        <NavBarButton  id='PROJECTS' usesDecorators={true}>
           PROJECTS
         </NavBarButton>
-        <NavBarButton>
+        <NavBarButton  id='ABOUTME' usesDecorators={true}>
           ABOUT ME
         </NavBarButton>
       </div>

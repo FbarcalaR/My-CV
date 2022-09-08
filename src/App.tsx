@@ -9,32 +9,35 @@ import AboutMe from './components/Sections/AboutMe/AboutMe';
 import NavBar from './components/UI/NavBar/NavBar';
 import Technologies from './components/Sections/Technologies/Technologies';
 import Languages from './components/Sections/Languages/Languages';
-import ElementListDivider from './components/UI/ListElementDivider/ElementListDivider';
+import SectionsContextProvider from './store/sections-provider';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <PageSection>
-        <Home />
-      </PageSection>
-      <PageSection>
-        <Experience />
-      </PageSection>
-      <PageSection>
-        <Studies />
-      </PageSection>
-      <PageSection>
-        <Technologies />
-        <Languages />
-      </PageSection>
-      <PageSection>
-        <Projects />
-      </PageSection>
-      <PageSection>
-        <AboutMe />
-      </PageSection>
-    </div>
+    <SectionsContextProvider>
+      <div className="App">
+        <NavBar defaultSectionKey={'HOME'}/>
+        <PageSection innerKey={'HOME'} >
+          <Home />
+        </PageSection>
+        <PageSection  innerKey={'EXPERIENCE'} >
+          <Experience />
+        </PageSection>
+        <PageSection  innerKey={'STUDIES'} >
+          <Studies />
+        </PageSection>
+        <PageSection  innerKey={'SKILLS'} >
+          <Technologies />
+          <Languages />
+        </PageSection>
+        <PageSection  innerKey={'PROJECTS'} >
+          <Projects />
+        </PageSection>
+        <PageSection  innerKey={'ABOUTME'} >
+          <AboutMe />
+        </PageSection>
+      </div>
+
+    </SectionsContextProvider>
   );
 }
 
