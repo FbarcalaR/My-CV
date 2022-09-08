@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useContext, useEffect, useRef, useState } from 'react';
+import React, { FunctionComponent, useCallback, useContext, useEffect, useRef, useState } from 'react';
 import { SectionsContext } from '../../../../store/sections-context';
 import classes from "./NavBarButton.module.css";
 
@@ -12,7 +12,7 @@ const NavBarButton: FunctionComponent<Props> = (props) => {
   const {activeButton, setActiveButton, sections} = useContext(SectionsContext);
   const navButton = useRef<HTMLButtonElement>(null);
 
-  const isButtonActive = () => activeButton === props.id;
+  const isButtonActive = useCallback(() => activeButton === props.id, [activeButton]);
 
   useEffect(() => {
     if (isButtonActive()) {
@@ -26,7 +26,7 @@ const NavBarButton: FunctionComponent<Props> = (props) => {
   }, [activeButton])
 
   const scrollToSection = (key: string) => {
-    setActiveButton(key);
+    // setActiveButton(key);
     const sectionToScrollTo = sections.get(key);
     sectionToScrollTo?.current?.scrollIntoView({behavior: 'auto', block: 'center', inline: 'center'});
   };

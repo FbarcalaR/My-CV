@@ -24,7 +24,7 @@ const PageSection: FunctionComponent<Props> = (props) => {
     }, []);
 
     useEffect(()=>{
-        if (props.innerKey)
+        if (props.innerKey && isVisible)
             setActiveButton(props.innerKey)
     }, [isVisible])
 
