@@ -1,9 +1,16 @@
-.buttonStyle {
-    color: grey;
+.button-basic-style {
     font-size: large;
     
     cursor: pointer;
     background-color: transparent;
     border: none;
     outline: none;
+}
+
+.button-active {
+    color: white;
+}
+
+.button-inactive {
+    color: grey;
 }
