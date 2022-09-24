@@ -9,3 +9,13 @@
     justify-content: center;
     gap: 145px;
 }
+
+.buttons-block .button:hover {
+    transform: scale(1.25, 1.25);
+    transition-duration: 0.3s;
+}
+
+.buttons-block .button:active {
+    transform: scale(1, 1);
+    transition-duration: 0.3s;
+}
