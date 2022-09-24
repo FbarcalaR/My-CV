@@ -1,4 +1,5 @@
 import React, { FunctionComponent, useEffect, useRef } from 'react';
+import useIsElementOnScreen from '../../../../hooks/useIsElementOnScreen';
 import classes from './Language.module.css';
 
 interface Props {
@@ -8,10 +9,17 @@ interface Props {
 
 const Language: FunctionComponent<Props> = (props) => {
     const fillingRef = useRef<HTMLSpanElement>(null);
+    const isBarVisible = useIsElementOnScreen(fillingRef);
     
     useEffect(()=>{
-        fillingRef.current?.style.setProperty('width', `${props.ratingPercentage}%`);
-    });
+        if(!fillingRef.current)
+            return;
+
+        if(isBarVisible)
+            fillingRef.current.style.setProperty('width', `${props.ratingPercentage}%`);
+        else
+            fillingRef.current.style.setProperty('width', `0%`);
+    }, [fillingRef, props.ratingPercentage, isBarVisible]);
 
     return (
         <div className={classes['language-container']}>

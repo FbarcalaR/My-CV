@@ -10,7 +10,7 @@ const useIsElementOnScreen = (ref: React.RefObject<any>) => {
     observer.observe(ref.current);
 
     return () => { observer.disconnect() }
-  }, [])
+  }, [ref])
 
   return isIntersecting
 }

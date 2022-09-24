@@ -21,12 +21,12 @@ const PageSection: FunctionComponent<Props> = (props) => {
             if (props.innerKey)
                 sections.delete(props.innerKey);
         }
-    }, []);
+    }, [props.innerKey , sections]);
 
     useEffect(()=>{
         if (props.innerKey && isSectionVisible)
             setActiveButton(props.innerKey)
-    }, [isSectionVisible])
+    }, [isSectionVisible, props.innerKey, setActiveButton])
 
     return (
         <div ref={sectionDivRef} className={classes.section}>{props.children}</div>
