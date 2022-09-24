@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useContext, useEffect, useRef } from "react";
-import useOnScreen from "../../../hooks/use-on-screen";
-import { SectionsContext } from "../../../store/sections-context";
+import useIsElementOnScreen from "../../../hooks/useIsElementOnScreen";
+import { SectionsContext } from "../../../store/sections/sections-context";
 import classes from "./PageSection.module.css";
 
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
 const PageSection: FunctionComponent<Props> = (props) => {
     const { sections, setActiveButton } = useContext(SectionsContext);
     const sectionDivRef = useRef<HTMLDivElement>(null);
-    const isVisible = useOnScreen(sectionDivRef);
+    const isSectionVisible = useIsElementOnScreen(sectionDivRef);
 
     useEffect(() => {
         if (props.innerKey)
@@ -24,9 +24,9 @@ const PageSection: FunctionComponent<Props> = (props) => {
     }, []);
 
     useEffect(()=>{
-        if (props.innerKey && isVisible)
+        if (props.innerKey && isSectionVisible)
             setActiveButton(props.innerKey)
-    }, [isVisible])
+    }, [isSectionVisible])
 
     return (
         <div ref={sectionDivRef} className={classes.section}>{props.children}</div>

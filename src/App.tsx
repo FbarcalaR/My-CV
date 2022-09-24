@@ -9,30 +9,30 @@ import AboutMe from './components/Sections/AboutMe/AboutMe';
 import NavBar from './components/UI/NavBar/NavBar';
 import Technologies from './components/Sections/Technologies/Technologies';
 import Languages from './components/Sections/Languages/Languages';
-import SectionsContextProvider from './store/sections-provider';
+import SectionsContextProvider, { SectionIds } from './store/sections/sections-provider';
 
 function App() {
   return (
     <SectionsContextProvider>
       <div className="App">
-        <NavBar defaultSectionKey={'HOME'}/>
-        <PageSection innerKey={'HOME'} >
+        <NavBar/>
+        <PageSection innerKey={SectionIds.Home} >
           <Home />
         </PageSection>
-        <PageSection  innerKey={'EXPERIENCE'} >
+        <PageSection  innerKey={SectionIds.Experience} >
           <Experience />
         </PageSection>
-        <PageSection  innerKey={'STUDIES'} >
+        <PageSection  innerKey={SectionIds.Studies} >
           <Studies />
         </PageSection>
-        <PageSection  innerKey={'SKILLS'} >
+        <PageSection  innerKey={SectionIds.Skills} >
           <Technologies />
           <Languages />
         </PageSection>
-        <PageSection  innerKey={'PROJECTS'} >
+        <PageSection  innerKey={SectionIds.Projects} >
           <Projects />
         </PageSection>
-        <PageSection  innerKey={'ABOUTME'} >
+        <PageSection  innerKey={SectionIds.AboutMe} >
           <AboutMe />
         </PageSection>
       </div>
