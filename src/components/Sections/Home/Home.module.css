@@ -2,6 +2,16 @@
     display: flex;
 }
 
+.presentation-block .name {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 100%;
+}
+
 .buttons-block {
     display: flex;
     flex-direction: row;

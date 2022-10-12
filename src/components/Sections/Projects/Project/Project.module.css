@@ -8,18 +8,19 @@
     width: 100%;
 }
 
-.link-icon {
-    height: 15px;
-    width: 15px;
+.project-header-container .link-icon {
+    height: 17px;
+    width: 17px;
     opacity: 60%;
     color: white;
+    rotate: 135deg;
 }
 
 .project-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-    margin-left: 5px;
+    margin-left: 3px;
 }
 
 .project-description {

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Name from './Name/Name';
 import classes from './Home.module.css'
 import Divider from './Divider/Divider';
 import Description from './Description/Description';
@@ -22,7 +21,7 @@ const Home = () => {
     const handleEmailClick = () => {
         navigator.clipboard.writeText(email);
         setEmailTooltipBody('Email copied to clipboard');
-        setTimeout(()=>setEmailTooltipBody(email), 1500);
+        setTimeout(()=>setEmailTooltipBody(email), 2000);
     }
 
     const handleGitHubClick = () => {
@@ -38,7 +37,11 @@ const Home = () => {
     return (
         <div>
             <div className={classes['presentation-block']}>
-                <Name>FERNANDO BARCALA RODRIGUEZ</Name>
+                <div className={classes.name}>
+                    <span>FERNANDO</span>
+                    <span>BARCALA</span>
+                    <span>RODRIGUEZ</span>
+                </div>
                 <Divider></Divider>
                 <Description></Description>
             </div>
