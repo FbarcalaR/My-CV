@@ -3,9 +3,11 @@ import Name from './Name/Name';
 import classes from './Home.module.css'
 import Divider from './Divider/Divider';
 import Description from './Description/Description';
-import FontAwesomeButton from './FontAwesomeButton/FontAwesomeButton';
-import { faEnvelope, faLocationDot, faPlugCircleBolt } from '@fortawesome/free-solid-svg-icons';
 import Tooltip from '../../UI/Tooltip/Tooltip';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import MailIcon from '@mui/icons-material/Mail';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const email = 'fernandobarcalarodriguez@gmail.com';
 
@@ -42,16 +44,16 @@ const Home = () => {
             </div>
             <div className={classes['buttons-block']}>
                 <Tooltip body={'Based on Málaga, Spain'}>
-                    <FontAwesomeButton className={classes['button']} icon={faLocationDot} onClick={handleMapClick}></FontAwesomeButton>
+                    <LocationOnIcon className={classes['button']} onClick={handleMapClick} />
                 </Tooltip>
                 <Tooltip body={emailTooltipBody}>
-                    <FontAwesomeButton className={classes['button']} icon={faEnvelope} onClick={handleEmailClick}></FontAwesomeButton>
+                    <MailIcon className={classes['button']} onClick={handleEmailClick} />
                 </Tooltip>
                 <Tooltip body={'Personal GitHub'}>
-                    <FontAwesomeButton className={classes['button']} icon={faPlugCircleBolt} onClick={handleGitHubClick}></FontAwesomeButton>
+                    <GitHubIcon className={classes['button']} onClick={handleGitHubClick} />
                 </Tooltip>
                 <Tooltip body={'LinkedIn page'}>
-                    <FontAwesomeButton className={classes['button']} icon={faPlugCircleBolt} onClick={handleLinkedInClick}></FontAwesomeButton>
+                    <LinkedInIcon className={classes['button']} onClick={handleLinkedInClick} />
                 </Tooltip>
             </div>
         </div>

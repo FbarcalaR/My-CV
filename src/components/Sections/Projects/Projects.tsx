@@ -1,13 +1,13 @@
 import React from 'react';
 import TitleSection from '../../UI/TitleSection/TitleSection';
-import { faCodePullRequest } from '@fortawesome/free-solid-svg-icons';
 import classes from './Projects.module.css';
 import Project from './Project/Project';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
 
 const Projects = () => {
     return (
         <div className={classes['projects-section-container']}>
-            <TitleSection icon={faCodePullRequest} title={'Personal/'} subtitle={'Projects'} />
+            <TitleSection icon={AccountTreeIcon} title={'Personal/'} subtitle={'Projects'} />
             <div className={classes['projects-list-container']}>
                 <Project title={'MyCV'} repositoryLink={'https://github.com/FbarcalaR/My-CV'} >
                     This CV, created to get to know me and my career, developed using <b>React</b>.

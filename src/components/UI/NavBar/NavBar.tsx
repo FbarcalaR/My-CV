@@ -1,15 +1,14 @@
 import React, { FunctionComponent } from 'react';
 import NavBarButton from './NavBarButton/NavBarButton';
 import classes from "./NavBar.module.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { SectionIds } from '../../../store/sections/sections-provider';
+import HomeIcon from '@mui/icons-material/Home';
 
 const NavBar: FunctionComponent = () => {
   return (
     <div className={classes.homeContainer}>
       <NavBarButton id={SectionIds.Home} >
-        <FontAwesomeIcon icon={faHome}/>
+        <HomeIcon/>
       </NavBarButton>
       <div className={classes.mainContainer}>
         <NavBarButton id={SectionIds.Experience} usesDecorators={true}>

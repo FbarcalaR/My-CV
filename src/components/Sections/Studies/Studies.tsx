@@ -1,14 +1,14 @@
 import React from 'react';
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import classes from './Studies.module.css';
 import TitleSection from '../../UI/TitleSection/TitleSection';
 import ExperienceEntry from '../../UI/ExperienceEntry/ExperienceEntry';
 import ElementListDivider from '../../UI/ListElementDivider/ElementListDivider';
+import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 
 const Studies = () => {
     return (
         <div className={classes['studies-container']}>
-            <TitleSection icon={faGraduationCap} title={'Career/'} subtitle={'Studies'} />
+            <TitleSection icon={SchoolRoundedIcon} title={'Career/'} subtitle={'Studies'} />
             <ExperienceEntry place='Avanade' title='Internship' date='Jan 2019-Jul 2019'>
                 Worked directly with client, understanding how a company develops and delivers software.
                 Also, worked with internal web with <b>C#</b>, <b>.NET</b> and <b>HTML</b>.

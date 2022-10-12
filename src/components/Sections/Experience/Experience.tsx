@@ -1,14 +1,14 @@
 import React from 'react';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import classes from './Experience.module.css';
 import TitleSection from '../../UI/TitleSection/TitleSection';
 import ExperienceEntry from '../../UI/ExperienceEntry/ExperienceEntry';
 import ElementListDivider from '../../UI/ListElementDivider/ElementListDivider';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 
 const Experience = () => {
     return (
         <div className={classes['experience-container']}>
-            <TitleSection icon={faBriefcase} title={'Career/'} subtitle={'Experience'} />
+            <TitleSection icon={BusinessCenterIcon} title={'Career/'} subtitle={'Experience'} />
             <ExperienceEntry place='Ciklum' title='Junior-Developer' date='2020-NOW'>
                 Developed a vehicles auctions web app with technologies like
                 <b> C#</b>, <b>.NET</b>, <b>React</b>, <b>AWS</b>, <b>terraform</b> or <b>SQL</b>,

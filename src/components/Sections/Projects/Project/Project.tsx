@@ -1,7 +1,6 @@
-import { faLink } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { FunctionComponent } from 'react';
 import classes from './Project.module.css';
+import InsertLinkIcon from '@mui/icons-material/InsertLink';
 
 interface Props {
     title: string;
@@ -14,7 +13,7 @@ const Project: FunctionComponent<Props> = (props) => {
             <div className={classes['project-container']}>
                 <div className={classes['project-header-container']}>
                     <a href={props.repositoryLink} target='_blank' >
-                        <FontAwesomeIcon icon={faLink} className={classes['link-icon']} />
+                        <InsertLinkIcon className={classes['link-icon']} />
                     </a>
                     <span className={classes['project-title']}>{props.title}</span>
                 </div>

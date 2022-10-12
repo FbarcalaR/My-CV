@@ -10,6 +10,11 @@
     gap: 145px;
 }
 
+.buttons-block .button {
+    width: 28px;
+    height: 28px;
+}
+
 .buttons-block .button:hover {
     transform: scale(1.25, 1.25);
     transition-duration: 0.3s;
