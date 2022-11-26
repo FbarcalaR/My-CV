@@ -8,9 +8,9 @@
 }
 
 .button-active {
-    color: white;
+    color: var(--primary-color);
 }
 
 .button-inactive {
-    color: grey;
+    color: var(--primary-disabled-color);
 }

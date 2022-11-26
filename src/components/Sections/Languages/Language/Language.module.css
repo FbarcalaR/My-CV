@@ -17,9 +17,9 @@
 
 .level-bar {
     position: relative;
-    background-color: black;
+    background-color: var(--background-color);
     padding: 1px;
-    border: 1px solid white;
+    border: 1px solid var(--primary-color);
     width: 60%;
     height: 18px;
 }
@@ -28,6 +28,6 @@
     display: block;
     height: 100%;
     width: 0%;
-    background-color: white;
+    background-color: var(--primary-color);
     transition: width 0.5s ease-out;
 }

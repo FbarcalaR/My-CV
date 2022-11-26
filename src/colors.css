@@ -1,0 +1,11 @@
+:root {
+    --background-color: #08080a;
+    --tooltip-background-color: #0e0e10;
+    --horizontal-divider-color: #0f0f13;
+
+    --primary-color: #f3f0e2;
+    --primary-disabled-color: #6d6c66;
+    --subtitle-color: #a09f9c;
+
+    --highlighted-element-color: #3077b9;
+}

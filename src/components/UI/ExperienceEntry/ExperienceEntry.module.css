@@ -10,7 +10,7 @@
     line-height: 23px;
     padding-bottom: 10px;
 
-    color: #FFFFFF;
+    color: var(--primary-color);
 }
 
 .experience-date {
@@ -18,16 +18,14 @@
     font-size: 15px;
     line-height: 18px;
     
-    color: #AAAAAA;
+    color: var(--subtitle-color);
 }
 
 .experience-body {
-    /* max-width: 65%; */
-
     font-size: 17px;
     line-height: 20px;
     display: flex;
     align-items: center;
     
-    color: #E0E0E0;
+    color: var(--primary-color);
 }

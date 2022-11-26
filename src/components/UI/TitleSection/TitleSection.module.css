@@ -7,12 +7,12 @@
 }
 
 .title-font b{
-    color: #61D8D8;
+    color: var(--highlighted-element-color);
 }
 
 .title-font .title-icon {
     width: 36px;
     height: 36px;
     padding-right: 32px;
-    color: #61D8D8;
+    color: var(--highlighted-element-color);
 }

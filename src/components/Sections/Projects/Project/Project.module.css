@@ -12,7 +12,7 @@
     height: 17px;
     width: 17px;
     opacity: 60%;
-    color: white;
+    color: var(--primary-color);
     rotate: 135deg;
 }
 

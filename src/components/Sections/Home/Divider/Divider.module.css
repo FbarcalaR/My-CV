@@ -1,6 +1,6 @@
 .divider {
     display: inline-block;
     width: 2px;
-    background-color: white;
+    background-color: var(--primary-color);
     margin: -7px 70px;
   }

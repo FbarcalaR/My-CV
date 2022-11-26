@@ -1,6 +1,7 @@
 import React from 'react';
 import PageSection from './components/UI/PageSection/PageSection';
 import './App.css';
+import './colors.css';
 import Home from './components/Sections/Home/Home';
 import Experience from './components/Sections/Experience/Experience';
 import Studies from './components/Sections/Studies/Studies';

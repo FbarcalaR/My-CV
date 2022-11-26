@@ -1,5 +1,5 @@
 .section {
-    color: white;
+    color: var(--primary-color);
     height: 100vh;
     display: flex;
     align-items: center;

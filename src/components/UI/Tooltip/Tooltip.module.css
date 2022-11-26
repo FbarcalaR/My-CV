@@ -17,7 +17,7 @@
   border-radius: 6px;
   top: 80%;
 
-  background-color: rgb(10, 10, 10);
+  background-color: var(--tooltip-background-color);
   opacity: 95%;
 
   text-align: center;
