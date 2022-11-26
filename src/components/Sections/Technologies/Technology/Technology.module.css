@@ -6,12 +6,17 @@
     justify-items: center;
 }
 
-.icon {
+.technology-container .icon {
     width: 70px;
     height: 70px;
 }
 
-.technology-name {
+.icon svg {
+    width: inherit;
+    height: inherit;
+}
+
+.technology-container .technology-name {
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;

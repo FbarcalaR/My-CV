@@ -12,7 +12,9 @@ const Technology: FunctionComponent<Props> = (props) => {
     return (
         <div className={classes['technology-container']}>
             <Tooltip body={props.children}>
-                <props.icon className={classes['icon']} />
+                <div className={classes['icon']}>
+                    <props.icon />
+                </div>
             </Tooltip>
             <span className={classes['technology-name']}>{props.name}</span>
         </div>
