@@ -13,11 +13,12 @@
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
     .about-me-container {
         width: 60%;
-    }    
+    }
 }
 
 .about-me-container>img {
     width: 40%;
+    min-width: 40%;
     height: 100%;
 }
 

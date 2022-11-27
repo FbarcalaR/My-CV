@@ -9,6 +9,7 @@
 .technology-container .icon {
     width: 70px;
     height: 70px;
+    padding-top: 12px;
 }
 
 .icon svg {
