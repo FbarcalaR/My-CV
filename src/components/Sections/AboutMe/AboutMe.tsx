@@ -6,7 +6,7 @@ const AboutMe = () => {
     return (
         <div className={classes['about-me-container']}>
             <img src={myPicture} alt='me' ></img>
-            <p>
+            <p className='font-body'>
                 I’m a Software Developer, working as <b>Fullstack</b> and interested in fields like <b>Software Design</b> or <b>Game Development</b>.
                 <br/>
                 <br/>

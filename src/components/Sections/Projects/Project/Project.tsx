@@ -15,10 +15,10 @@ const Project: FunctionComponent<Props> = (props) => {
                     <a href={props.repositoryLink} target='_blank' >
                         <InsertLinkIcon className={classes['link-icon']} />
                     </a>
-                    <span className={classes['project-title']}>{props.title}</span>
+                    <span className={`${classes['project-title']} font-body`}>{props.title}</span>
                 </div>
 
-                <p className={classes['project-description']}>
+                <p className={`${classes['project-description']} font-body`}>
                     {props.children}
                 </p>
             </div>

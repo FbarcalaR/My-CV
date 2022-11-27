@@ -31,7 +31,7 @@ const NavBarButton: FunctionComponent<Props> = (props) => {
   };
 
   return (
-    <button ref={navButton} className={classes['button-basic-style']} onClick={() => scrollToSection(props.id)}>
+    <button ref={navButton} className={`${classes['button-basic-style']} font-title`} onClick={() => scrollToSection(props.id)}>
       {isButtonActive && props.usesDecorators ? `{ ${props.children} }` : props.children}
     </button>
   );

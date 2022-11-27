@@ -8,11 +8,13 @@
     width: 277px;
     margin-top: -15px;
     margin-bottom: -10px;
-    font-size: 30px;
+    font-size: 29px;
     line-height: 67px;
     letter-spacing: 0.47em;
 }
 
 .body {
+    width: 277px;
+    font-size: 15.74px;
     letter-spacing: 0.02em;
 }

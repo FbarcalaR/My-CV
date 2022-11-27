@@ -16,7 +16,7 @@ const Technology: FunctionComponent<Props> = (props) => {
                     <props.icon />
                 </div>
             </Tooltip>
-            <span className={classes['technology-name']}>{props.name}</span>
+            <span className={`${classes['technology-name']} font-body`}>{props.name}</span>
         </div>
     );
 }

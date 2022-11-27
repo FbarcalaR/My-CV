@@ -4,8 +4,8 @@ import classes from './Description.module.css';
 const Description = () => {
         return (
             <div className={classes.container}>
-                <span className={classes.header}>FULLSTACK DEVELOPER</span>
-                <span className={classes.body}>Building web apps, from front to back</span>
+                <span className={`${classes.header} font-title`}>FULLSTACK DEVELOPER</span>
+                <span className={`${classes.body} font-body`}>Building web apps, from front to back</span>
             </div>
         );
 }

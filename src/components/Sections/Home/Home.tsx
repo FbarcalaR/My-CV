@@ -38,9 +38,9 @@ const Home = () => {
         <div>
             <div className={classes['presentation-block']}>
                 <div className={classes.name}>
-                    <span>FERNANDO</span>
-                    <span>BARCALA</span>
-                    <span>RODRIGUEZ</span>
+                    <span className='font-title'>FERNANDO</span>
+                    <span className='font-title'>BARCALA</span>
+                    <span className='font-title'>RODRIGUEZ</span>
                 </div>
                 <Divider></Divider>
                 <Description></Description>

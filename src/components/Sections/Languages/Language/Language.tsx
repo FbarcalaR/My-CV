@@ -23,7 +23,7 @@ const Language: FunctionComponent<Props> = (props) => {
 
     return (
         <div className={classes['language-container']}>
-            <span className={classes['language-name']}>{props.name}</span>
+            <span className={`${classes['language-name']} font-body`}>{props.name}</span>
             <div className={classes['level-bar']}>
                 <span ref={fillingRef} ></span>
             </div>
