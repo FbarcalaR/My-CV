@@ -5,7 +5,7 @@
     margin-top: 20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .container {
         margin-top: 0;
     }
@@ -15,9 +15,10 @@
     font-size: 1.8em;
     line-height: 2.35em;
     letter-spacing: 0.47em;
+    max-width: min-content;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .header {
         width: 277px;
         margin-top: -15px;

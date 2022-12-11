@@ -5,14 +5,7 @@
     align-items: center;
 }
 
-@media only screen and (min-width: 1200px) {
-    .about-me-container {
-        width: 40%;
-        flex-direction: row;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 1024px) {
     .about-me-container {
         width: 60%;
         flex-direction: row;
@@ -20,8 +13,8 @@
 }
 
 .about-me-container>img {
-    width: 80%;
-    min-width: 80%;
+    width: 70%;
+    min-width: 70%;
     height: 100%;
 }
 
@@ -29,7 +22,6 @@
     .about-me-container>img {
         width: 40%;
         min-width: 40%;
-        height: 100%;
     }
 }
 
@@ -39,7 +31,7 @@
     margin-top: 40px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .about-me-container>p {
         margin-left: 15%;
         margin-top: 0;
