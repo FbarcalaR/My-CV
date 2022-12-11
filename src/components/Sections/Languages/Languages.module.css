@@ -1,10 +1,23 @@
 .languages-section-container {
-    min-width: 20%;
+    min-width: 80%;
+    margin-top: 40px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .languages-section-container {
+        min-width: 20%;
+        margin-top: 0;
+    }
 }
 
 .languages-list-container {
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    .languages-list-container {
+        height: 100%;
+    }
 }

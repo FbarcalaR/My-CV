@@ -1,5 +1,6 @@
 .about-me-container {
     display: flex;
+    flex-direction: column;
     width: 80%;
     align-items: center;
 }
@@ -7,22 +8,42 @@
 @media only screen and (min-width: 1200px) {
     .about-me-container {
         width: 40%;
-    }    
+        flex-direction: row;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
     .about-me-container {
         width: 60%;
+        flex-direction: row;
     }
 }
 
 .about-me-container>img {
-    width: 40%;
-    min-width: 40%;
+    width: 80%;
+    min-width: 80%;
     height: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+    .about-me-container>img {
+        width: 40%;
+        min-width: 40%;
+        height: 100%;
+    }
+}
+
 .about-me-container>p {
-    margin-left: 15%;
+    width: 80%;
     min-width: 20%;
+    margin-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .about-me-container>p {
+        margin-left: 15%;
+        margin-top: 0;
+        width: 100%;
+        min-width: 20%;
+    }
 }

@@ -35,7 +35,7 @@ const Home = () => {
     }
 
     return (
-        <div>
+        <div className={classes['presentation-block-wrapper']}>
             <div className={classes['presentation-block']}>
                 <div className={classes.name}>
                     <span className='font-title'>FERNANDO</span>

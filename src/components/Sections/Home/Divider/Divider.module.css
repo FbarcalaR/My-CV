@@ -1,6 +1,12 @@
 .divider {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .divider {
     display: inline-block;
     width: 2px;
     background-color: var(--primary-color);
     margin: -7px 70px;
   }
+}

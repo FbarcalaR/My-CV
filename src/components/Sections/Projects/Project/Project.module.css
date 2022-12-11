@@ -1,7 +1,12 @@
 .project-container {
-    width: 48%;
     margin-bottom: 1%;
     margin-right: 2%;
+}
+
+@media only screen and (min-width: 768px) {
+    .project-container {
+        width: 48%;
+    }
 }
 
 .project-header-container {
