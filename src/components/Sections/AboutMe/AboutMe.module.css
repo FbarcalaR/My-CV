@@ -20,8 +20,8 @@
 
 @media only screen and (min-width: 768px) {
     .about-me-container>img {
-        width: 40%;
-        min-width: 40%;
+        width: 30%;
+        min-width: 30%;
     }
 }
 
