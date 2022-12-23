@@ -7,14 +7,18 @@
 }
 
 .technology-container .icon {
-    width: 70px;
-    height: 70px;
+    width: 25vw;
+    max-width: 70px;
+    height: 25vw;
+    max-height: 70px;
     padding-top: 12px;
 }
 
 .icon svg {
     width: inherit;
+    max-width: inherit;
     height: inherit;
+    max-height: inherit;
 }
 
 .technology-container .technology-name {
