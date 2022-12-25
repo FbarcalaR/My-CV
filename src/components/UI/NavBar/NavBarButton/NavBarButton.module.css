@@ -1,5 +1,5 @@
 .button-basic-style {
-    font-size: large;
+    font-size: var(--small-title-font-size);
     
     cursor: pointer;
     background-color: transparent;

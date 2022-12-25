@@ -23,14 +23,14 @@
 
 .project-title {
     font-weight: 700;
-    font-size: 20px;
+    font-size: var(--small-title-font-size);
     line-height: 23px;
     margin-left: 3px;
 }
 
 .project-description {
     font-weight: 400;
-    font-size: 17px;
+    font-size: var(--regular-content-font-size);
     line-height: 20px;
     margin-inline-start: 20px;
 }

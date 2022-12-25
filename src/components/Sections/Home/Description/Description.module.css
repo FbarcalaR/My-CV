@@ -13,7 +13,7 @@
 }
 
 .header {
-    font-size: 1.8em;
+    font-size: var(--large-title-font-size);
     line-height: 2.35em;
     letter-spacing: 0.47em;
     max-width: min-content;

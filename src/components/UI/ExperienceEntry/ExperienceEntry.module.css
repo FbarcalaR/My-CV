@@ -14,7 +14,7 @@
 .experience-title {
     width: 100%;
     font-style: normal;
-    font-size: 1.2em;
+    font-size: var(--small-title-font-size);
     line-height: 23px;
 
     color: var(--primary-color);
@@ -30,7 +30,7 @@
 .experience-date {
     width: 100%;
     font-style: italic;
-    font-size: 0.75em;
+    font-size: var(--small-content-font-size);
     text-align: end;
     line-height: 18px;
 
@@ -45,7 +45,7 @@
 }
 
 .experience-body {
-    font-size: 1em;
+    font-size: var(--regular-content-font-size);
     line-height: 20px;
     display: flex;
     align-items: center;

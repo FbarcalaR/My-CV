@@ -1,6 +1,6 @@
 .title-font {
     width: 100%;
-    font-size: 22px;
+    font-size: var(--regular-title-font-size);
     display: flex;
     flex-wrap: wrap;
     align-items: center;

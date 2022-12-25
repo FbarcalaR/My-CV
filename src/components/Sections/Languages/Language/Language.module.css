@@ -10,7 +10,7 @@
 
 .language-name {
     font-weight: 700;
-    font-size: 15px;
+    font-size: var(--regular-content-font-size);
     line-height: 18px;
     width: 40%;
 }
