@@ -1,25 +1,15 @@
-.tooltip {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.tooltip:hover .tooltip-text {
-  visibility: visible;
-}
-
-.tooltip .tooltip-text {
-  visibility: hidden;
-  position: absolute;
-  z-index: 1;
+.tooltip >div {
   width: max-content;
   max-width: 90vw;
-  padding: 5px 10px;
   border-radius: 6px;
-  top: 80%;
 
   background-color: var(--tooltip-background-color);
+  color: var(--primary-color);
   opacity: 95%;
 
   text-align: center;
+}
+
+.tooltip >div:first-child {
+  padding: 5px 10px;
 }

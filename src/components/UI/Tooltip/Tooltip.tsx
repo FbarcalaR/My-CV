@@ -1,17 +1,27 @@
-import React, { FunctionComponent } from 'react';
+import Tippy from '@tippyjs/react';
+import {roundArrow} from 'tippy.js';
+import React, { FunctionComponent, ReactElement } from 'react';
 import classes from './Tooltip.module.css';
+import 'tippy.js/animations/shift-away.css';
+import 'tippy.js/dist/svg-arrow.css';
 
 interface Props {
     body: React.ReactNode;
-    children?: React.ReactNode;
+    children?: ReactElement;
 }
 
 const Tooltip: FunctionComponent<Props> = (props) => {
     return (
-        <div className={classes['tooltip']} >
+
+        <Tippy
+            content={props.body}
+            className={classes['tooltip']}
+            arrow={roundArrow}
+            placement='bottom'
+            animation='shift-away'
+        >
             {props.children}
-            <p className={`${classes['tooltip-text']} font-body`} >{props.body}</p>
-        </div>
+        </Tippy>
     );
 }
 
