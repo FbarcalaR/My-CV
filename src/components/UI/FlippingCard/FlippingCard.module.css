@@ -1,0 +1,34 @@
+.flipping-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.flipping-card:hover .flipping-card-text {
+  /* visibility: visible; */
+  transition: scale(1.2) 0.2s ease-out;
+}
+
+.flipping-card:hover .flipping-card-children {
+  /* visibility: hidden; */
+  transition: scale(0) 0.2s ease-in;
+  transition-property: scale(0);
+}
+
+.flipping-card .flipping-card-text {
+  /* visibility: hidden; */
+  transform: scale(0);
+  position: absolute;
+  z-index: 1;
+  width: inherit;
+  height: 100%;
+  padding: 5px 10px;
+  border-radius: 6px;
+
+  background-color: var(--tooltip-background-color);
+  opacity: 95%;
+
+  text-align: center;
+  font-size: 0.7em;
+  overflow: scroll;
+}
