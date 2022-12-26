@@ -1,3 +1,9 @@
+.shift-effect {
+    visibility: hidden;
+    transform: translateY(50vh);
+    transition: transform 0.8s ease-out;
+}
+
 .project-container {
     margin-bottom: 1%;
     margin-right: 2%;

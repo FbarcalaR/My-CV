@@ -1,8 +1,22 @@
+.shift-effect {
+    visibility: hidden;
+    transition: transform 0.8s ease-out;
+}
+.shift-effect.from-left {
+    /* transform: translateX(-50vw); */
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+.shift-effect.from-right {
+    transform: translateX(50vw);
+}
+
 .about-me-container {
     display: flex;
     flex-direction: column;
     width: 80%;
     align-items: center;
+    overflow: hidden;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -16,6 +30,7 @@
     width: 70%;
     min-width: 70%;
     height: 100%;
+
 }
 
 @media only screen and (min-width: 768px) {

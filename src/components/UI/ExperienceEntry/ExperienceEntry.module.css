@@ -1,3 +1,9 @@
+.shift-effect {
+    visibility: hidden;
+    transform: translateY(50vh);
+    transition: transform 0.8s ease-out;
+}
+
 .experience-header {
     display: flex;
     flex-direction: column;
