@@ -2,11 +2,12 @@
     visibility: hidden;
     transition: transform 0.8s ease-out;
 }
+
 .shift-effect.from-left {
-    /* transform: translateX(-50vw); */
     opacity: 0;
     transition: opacity 1s ease-out;
 }
+
 .shift-effect.from-right {
     transform: translateX(50vw);
 }
@@ -28,7 +29,7 @@
 
 .about-me-container>img {
     width: 70%;
-    min-width: 70%;
+    max-width: 350px;
     height: 100%;
 
 }
@@ -41,7 +42,7 @@
 }
 
 .about-me-container>p {
-    width: 80%;
+    width: 100%;
     min-width: 20%;
     margin-top: 40px;
 }
@@ -50,7 +51,6 @@
     .about-me-container>p {
         margin-left: 15%;
         margin-top: 0;
-        width: 100%;
         min-width: 20%;
     }
 }

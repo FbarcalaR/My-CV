@@ -31,10 +31,10 @@ const Project: FunctionComponent<Props> = (props) => {
     return (
         <div ref={projectContainerDiv} className={classes['project-container']}>
             <div ref={headerDiv} className={`${classes['project-header-container']} ${classes['shift-effect']}`}>
+                <span className={`${classes['project-title']} font-body`}>{props.title}</span>
                 <a href={props.repositoryLink} target='_blank' rel='noreferrer' >
                     <InsertLinkIcon className={classes['link-icon']} />
                 </a>
-                <span className={`${classes['project-title']} font-body`}>{props.title}</span>
             </div>
 
             <p ref={descriptionParagraph} className={`${classes['project-description']} font-body ${classes['shift-effect']}`}>
