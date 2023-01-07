@@ -10,13 +10,13 @@ const Experience = () => {
         <div className={classes['experience-container']}>
             <TitleSection icon={BusinessCenterIcon} title={'Career/'} subtitle={'Experience'} />
             <ExperienceEntry place='Vector Software' title='Middle-Developer' date='2022-now'>
-                Developed a Supply Chain web app with technologies like
-                <b> C#</b>, <b>.NET</b>, <b>React</b>, <b>Azure</b>, or <b>SQL</b>,
+                Developed a couple of web projects to manage ecological certifications and energy consumptions
+                with technologies like <b>React</b>, <b>Angular</b>, <b>TypeScript</b>, <b>C#</b>, <b>.NET</b>, <b>Azure</b>, or <b>SQL</b>,
                 in an agile (<b>SCRUM</b>) and <b>international</b> team.
             </ExperienceEntry>
             <ElementListDivider />
             <ExperienceEntry place='Ciklum' title='Junior-Developer' date='2020-2022'>
-                Developed a vehicle auctions web app with technologies like
+                Developed a vehicle auctions web app, based on different micro-services, with technologies like
                 <b> C#</b>, <b>.NET</b>, <b>React</b>, <b>AWS</b>, <b>terraform</b> or <b>SQL</b>,
                 in an agile (<b>SCRUM</b>) and <b>international</b> team.
             </ExperienceEntry>
