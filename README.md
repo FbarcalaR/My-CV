@@ -6,5 +6,5 @@ This is my professional CV, created to get to know me and my career in a more dy
 ## How can I see it running?
 You have two options:
 - run it locally, by downloading the source code and executing `npm i` and `npm start` in the root folder.
-- or, just go to 
+- or, just go to https://my-cv-fbarcalar.vercel.app/ and take a look
 
