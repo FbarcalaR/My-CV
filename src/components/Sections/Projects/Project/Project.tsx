@@ -13,7 +13,7 @@ const Project: FunctionComponent<Props> = (props) => {
     const projectContainerDiv = useRef<HTMLDivElement>(null);
     const headerDiv = useRef<HTMLDivElement>(null);
     const descriptionParagraph = useRef<HTMLParagraphElement>(null);
-    const isProjectVisible = useIsElementOnScreen(projectContainerDiv, 1);
+    const isProjectVisible = useIsElementOnScreen(projectContainerDiv, 0.9);
     
     useEffect(()=>{
         if(!projectContainerDiv.current || !headerDiv.current || !descriptionParagraph.current)

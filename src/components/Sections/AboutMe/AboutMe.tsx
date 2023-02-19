@@ -7,7 +7,7 @@ const AboutMe = () => {
     const containerDiv = useRef<HTMLDivElement>(null);
     const imageElement = useRef<HTMLImageElement>(null);
     const bodyDiv = useRef<HTMLParagraphElement>(null);
-    const isSectionVisible = useIsElementOnScreen(containerDiv, 1);
+    const isSectionVisible = useIsElementOnScreen(containerDiv, 0.9);
     
     useEffect(()=>{
         if(!containerDiv.current || !imageElement.current || !bodyDiv.current)

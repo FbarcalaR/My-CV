@@ -13,7 +13,7 @@ const ExperienceEntry: FunctionComponent<Props> = (props) => {
     const experienceDiv = useRef<HTMLDivElement>(null);
     const headerDiv = useRef<HTMLDivElement>(null);
     const bodyDiv = useRef<HTMLDivElement>(null);
-    const isEntryVisible = useIsElementOnScreen(experienceDiv, 1);
+    const isEntryVisible = useIsElementOnScreen(experienceDiv, 0.9);
     
     useEffect(()=>{
         if(!experienceDiv.current || !headerDiv.current || !bodyDiv.current)
