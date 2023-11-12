@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import classes from './Home.module.css'
 import Divider from './Divider/Divider';
 import Description from './Description/Description';
@@ -7,11 +7,14 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MailIcon from '@mui/icons-material/Mail';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Scene from './Physics/Physics';
 
 const email = 'fernandobarcalarodriguez@gmail.com';
 
 const Home = () => {
     const [emailTooltipBody, setEmailTooltipBody] = useState(email);
+    const [renderCanvas, setRenderCanvas] = useState(false);
+    const containerDiv = useRef<HTMLDivElement>(null);
 
     const handleMapClick = () => {
         const urlToMapsLocation = 'https://www.google.es/maps/place/M%C3%A1laga/@36.765025,-4.5642765,11z/data=!3m1!4b1!4m5!3m4!1s0xd72f6698d30d151:0x403d278a576e680!8m2!3d36.7211784!4d-4.4217199';
@@ -34,8 +37,14 @@ const Home = () => {
         window.open(urlToLinkedInHub,'_blank');
     }
 
+    useEffect(() => {
+        if(containerDiv?.current)
+            setRenderCanvas(true);
+    }, [containerDiv]);
+
     return (
-        <div className={classes['presentation-block-wrapper']}>
+        <>
+        <div className={classes['presentation-block-wrapper']} ref={containerDiv}>
             <div className={classes['presentation-block']}>
                 <div className={classes.name}>
                     <span className='font-title'>FERNANDO</span>
@@ -60,6 +69,8 @@ const Home = () => {
                 </Tooltip>
             </div>
         </div>
+        {renderCanvas && <Scene wrapperElement={containerDiv.current}/>}
+        </>
     );
 }
 
