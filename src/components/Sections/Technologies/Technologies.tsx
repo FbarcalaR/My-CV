@@ -4,7 +4,7 @@ import classes from './Technologies.module.css';
 import Technology from './Technology/Technology';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import {ReactComponent as AngularLogo} from '../../../assets/technologies/angular.svg';
-import {ReactComponent as CSharpLogo} from '../../../assets/technologies/cSharp.svg';
+import {ReactComponent as AzureLogo} from '../../../assets/technologies/azure.svg';
 import {ReactComponent as DotNetCoreLogo} from '../../../assets/technologies/dotNetCore.svg';
 import {ReactComponent as MicrosoftSqlServerLogo} from '../../../assets/technologies/microsoftSqlServer.svg';
 import {ReactComponent as ReactLogo} from '../../../assets/technologies/react.svg';
@@ -13,7 +13,7 @@ import {ReactComponent as TypeScriptLogo} from '../../../assets/technologies/typ
 const Technologies = () => {
     const reactExperienceYears = (new Date()).getFullYear() - 2021;
     const netExperienceYears = (new Date()).getFullYear() - 2019;
-    const cSharpExperienceYears = (new Date()).getFullYear() - 2019;
+    const azureExperienceYears = (new Date()).getFullYear() - 2021;
     const sqlServerExperienceYears = (new Date()).getFullYear() - 2019;
 
     return (
@@ -32,13 +32,13 @@ const Technologies = () => {
                 <Technology name={'TypeScript'} icon={()=><TypeScriptLogo />}>
                     Worked with TypeScript for +1.5 years, under other technologies like React or Angular
                 </Technology>
-                <Technology name={'.NET Core'} icon={()=><DotNetCoreLogo />}>
+                <Technology name={'.NET'} icon={()=><DotNetCoreLogo />}>
                     Worked with .NET Core for +{netExperienceYears} years. <br/>
                     Used to develop REST APIs, along with Entity Framework.
                 </Technology>
-                <Technology name={'C#'} icon={()=><CSharpLogo />}>
-                    Worked with C# for +{cSharpExperienceYears} years. <br />
-                    Also, I've used it in personal projects.
+                <Technology name={'Azure'} icon={()=><AzureLogo />}>
+                    Worked with azure for +{azureExperienceYears} years. <br />
+                    Used it mainly for deployments
                 </Technology>
                 <Technology name={'SQL Server'} icon={()=><MicrosoftSqlServerLogo />}>
                     Worked with SQL Server for +{sqlServerExperienceYears} years. <br />

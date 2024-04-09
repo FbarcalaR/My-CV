@@ -15,8 +15,8 @@ const Projects = () => {
                 <Project title={'Abbaco'} repositoryLink={'https://github.com/FbarcalaR/AbbacoDOC'} >
                     Project about financial management, to learn <b>React</b> and revisit <b>Spring Boot</b> concepts.
                 </Project>
-                <Project title={'Boxing Web Scrapper'} repositoryLink={'https://github.com/FbarcalaR/Boxing-Bouts-Predictor'} >
-                    Project created with <b>Phyton</b> to extract, store and analyse data from a boxing matches web data.
+                <Project title={'Pizza Tracker'} repositoryLink={'https://github.com/FbarcalaR/Pizza-Tracker'} >
+                    Pizza recipes calculator, developed using <b>Next.js</b> and <b>Firebase</b>
                 </Project>
                 <Project title={'Trains Puzzle'} repositoryLink={'https://github.com/FbarcalaR/TrainsPuzzle'} >
                     A jigsaw game, created with <b>C#</b> for fun to learn and explore core concepts about <b>Unity</b>.

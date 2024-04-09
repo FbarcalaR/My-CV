@@ -26,10 +26,14 @@ const AboutMe = () => {
         <div ref={containerDiv} className={classes['about-me-container']}>
             <img ref={imageElement} src={myPicture} alt='me' className={`${classes['shift-effect']} ${classes['from-left']}`} ></img>
             <p ref={bodyDiv} className={`font-body ${classes['shift-effect']} ${classes['from-right']}`}>
-                I’m a Software Developer, working as <b>Fullstack</b> and interested in fields like <b>Web Software Design</b> or <b>Software Architecture</b>.
+                Fullstack Developer with over 4 years of experience. After graduating in 
+                Software Engineering, I have been working with technologies like <b>React</b>, <b>Angular</b>, <b>.NET</b> and
+                <b>SQL</b> among others. I’m also keen to create quality and readable code, and always ready to 
+                learn new concepts about Software Design and Architecture.
                 <br/>
                 <br/>
-                In my free time, besides doing sports or playing videogames, I also like to learn and try new techs and concepts like <b>React</b>, <b>Clean Code</b> or <b>Unity</b>.
+                In my free time, besides doing sports or playing videogames, I also like to learn and try new techs and concepts like
+                <b> Clean Code</b>, <b>DDD</b> or <b>Software Design</b>.
             </p>
         </div>
     );
