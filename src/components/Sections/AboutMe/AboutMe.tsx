@@ -28,7 +28,7 @@ const AboutMe = () => {
             <p ref={bodyDiv} className={`font-body ${classes['shift-effect']} ${classes['from-right']}`}>
                 Fullstack Developer with over 4 years of experience. After graduating in 
                 Software Engineering, I have been working with technologies like <b>React</b>, <b>Angular</b>, <b>.NET</b> and
-                <b>SQL</b> among others. I’m also keen to create quality and readable code, and always ready to 
+                <b> SQL</b> among others. I’m also keen to create quality and readable code, and always ready to 
                 learn new concepts about Software Design and Architecture.
                 <br/>
                 <br/>
