@@ -1,14 +1,19 @@
 .experience-container {
-    max-width: 80%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
+
+    ul {
+        padding-left: 20px;
+        margin: 0;
+    }
 }
 
 
 @media only screen and (min-width: 1024px) {
     .experience-container {
-        max-width: 60%;
+        width: 60%;
     }    
 }

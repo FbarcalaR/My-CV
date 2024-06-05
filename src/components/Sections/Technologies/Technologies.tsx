@@ -30,7 +30,8 @@ const Technologies = () => {
                     Used to develop an SPA.
                 </Technology>
                 <Technology name={'TypeScript'} icon={()=><TypeScriptLogo />}>
-                    Worked with TypeScript for +1.5 years, under other technologies like React or Angular
+                    Worked with TypeScript for +1.5 years,<br />
+                    under other technologies like React or Angular
                 </Technology>
                 <Technology name={'.NET'} icon={()=><DotNetCoreLogo />}>
                     Worked with .NET Core for +{netExperienceYears} years. <br/>

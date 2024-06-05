@@ -10,8 +10,8 @@ const Languages = () => {
             <TitleSection icon={LanguageRoundedIcon} title={'Skills/'} subtitle={'Languages'} />
             <div className={classes['languages-list-container']}>
                 <Language name={'Spanish'} ratingPercentage={100}></Language>
-                <Language name={'English'} ratingPercentage={70}></Language>
-                <Language name={'German'} ratingPercentage={20}></Language>
+                <Language name={'English'} ratingPercentage={80}></Language>
+                <Language name={'German'} ratingPercentage={33}></Language>
             </div>
         </div>
     );
