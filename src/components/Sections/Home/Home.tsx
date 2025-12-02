@@ -14,7 +14,7 @@ const Home = () => {
     const [emailTooltipBody, setEmailTooltipBody] = useState(email);
 
     const handleMapClick = () => {
-        const urlToMapsLocation = 'https://www.google.es/maps/place/M%C3%A1laga/@36.765025,-4.5642765,11z/data=!3m1!4b1!4m5!3m4!1s0xd72f6698d30d151:0x403d278a576e680!8m2!3d36.7211784!4d-4.4217199';
+        const urlToMapsLocation = 'https://www.google.com/maps/place/M%C3%BAnich/@48.155022,11.3770276,37234m/data=!3m2!1e3!4b1!4m6!3m5!1s0x479e75f9a38c5fd9:0x10cb84a7db1987d!8m2!3d48.1351253!4d11.5819805!16s%2Fm%2F02h6_6p?authuser=0&entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D';
         window.open(urlToMapsLocation,'_blank');
     }
 
@@ -46,7 +46,7 @@ const Home = () => {
                 <Description></Description>
             </div>
             <div className={classes['buttons-block']}>
-                <Tooltip body={'Based on Málaga, Spain'}>
+                <Tooltip body={'In Munich, Germany'}>
                     <LocationOnIcon className={classes['button']} onClick={handleMapClick} />
                 </Tooltip>
                 <Tooltip body={emailTooltipBody}>

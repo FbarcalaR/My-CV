@@ -26,15 +26,15 @@ const Technologies = () => {
                     And developed some personal projects with it. <br />
                 </Technology>
                 <Technology name={'Angular'} icon={()=><AngularLogo />}>
-                    Worked with Angular for +1.5 years. <br />
+                    Worked with Angular for 2 years. <br />
                     Used to develop an SPA.
                 </Technology>
                 <Technology name={'TypeScript'} icon={()=><TypeScriptLogo />}>
-                    Worked with TypeScript for +1.5 years,<br />
+                    Worked with TypeScript for 3 years<br />
                     under other technologies like React or Angular
                 </Technology>
                 <Technology name={'.NET'} icon={()=><DotNetCoreLogo />}>
-                    Worked with .NET Core for +{netExperienceYears} years. <br/>
+                    Worked with .NET (Framework v4.7.2 to Core v8) for +{netExperienceYears} years. <br/>
                     Used to develop REST APIs, along with Entity Framework.
                 </Technology>
                 <Technology name={'Azure'} icon={()=><AzureLogo />}>
@@ -43,9 +43,16 @@ const Technologies = () => {
                 </Technology>
                 <Technology name={'SQL Server'} icon={()=><MicrosoftSqlServerLogo />}>
                     Worked with SQL Server for +{sqlServerExperienceYears} years. <br />
-                    Used for querying data or creating tables and views, e.g.
+                    Used for querying data or creating tables and views
                 </Technology>
             </div>
+            <ul>
+                <li><b>Frontend: </b>SCSS, LESS, React Native, Jest, Blazor</li>
+                <li><b>Backend: </b>C#, REST APIs, Entity Framework, nUnit</li>
+                <li><b>Cloud & DevOps: </b>Azure, AWS, Terraform, RabbitMQ, CI/CD</li>
+                <li><b>Architecture: </b>Microservices, DDD</li>
+                <li><b>Other: </b>Docker, Redis, SQL Server, Auth0, TDD</li>
+            </ul>
         </div>
     );
 }
