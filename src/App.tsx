@@ -21,11 +21,11 @@ function App() {
         <PageSection innerKey={SectionIds.Home} >
           <Home />
         </PageSection>
-        <PageSection  innerKey={SectionIds.Experience} >
-          <Experience />
-        </PageSection>
         <PageSection  innerKey={SectionIds.Studies} >
           <Studies />
+        </PageSection>
+        <PageSection  innerKey={SectionIds.Experience} >
+          <Experience />
         </PageSection>
         <PageSection  innerKey={SectionIds.Skills} >
           <Technologies />

@@ -11,11 +11,11 @@ const NavBar: FunctionComponent = () => {
         <HomeIcon/>
       </NavBarButton>
       <div className={classes.mainContainer}>
-        <NavBarButton id={SectionIds.Experience} usesDecorators={true}>
-          EXPERIENCE
-        </NavBarButton>
         <NavBarButton id={SectionIds.Studies} usesDecorators={true}>
           STUDIES
+        </NavBarButton>
+        <NavBarButton id={SectionIds.Experience} usesDecorators={true}>
+          EXPERIENCE
         </NavBarButton>
         <NavBarButton id={SectionIds.Skills} usesDecorators={true}>
           SKILLS

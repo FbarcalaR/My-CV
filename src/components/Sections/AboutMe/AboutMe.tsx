@@ -26,15 +26,16 @@ const AboutMe = () => {
         <div ref={containerDiv} className={classes['about-me-container']}>
             <img ref={imageElement} src={myPicture} alt='me' className={`${classes['shift-effect']} ${classes['from-left']}`} ></img>
             <p ref={bodyDiv} className={`font-body ${classes['shift-effect']} ${classes['from-right']}`}>
-                Fullstack Developer with nearly 5 years of experience. After graduating in 
-                Software Engineering, I have been working with technologies like <b>React</b>, <b>Angular</b>, <b>.NET</b>, 
-                <b> SQL</b> or <b>Azure</b>.  I’m also keen to create quality and readable code, always ready to learn new
-                 concepts about Software Design and Architecture, and engaged in continuous improvement and professional development.
-                  Willing to coach, pair with and learn from others.
+                Software Engineer with 6+ years of experience developing web and mobile applications using .NET, React, Angular, SQL, 
+                and modern system architectures and principles like microservices, DDD or CI/CD.
                 <br/>
                 <br/>
-                In my free time, apart of doing sports, read or cook, I also like to learn and try new techs and concepts like
-                <b> Clean Code</b>, <b>DDD</b> or <b>Software Design</b>.
+                Collaborative, fast learner and invested in continuous improvement, willing to coach and learn from others while having fun.
+                Passionate about software architecture, clean code, and having a look at new AI technologies.
+                <br/>
+                <br/>
+                In my free time, apart of doing sports, making (neapolitan) pizza or playing my guitar, I also like to learn about and try new techs and concepts like
+                <b> DDD</b>, <b>Software Design</b> or <b>AI agents</b>.
             </p>
         </div>
     );

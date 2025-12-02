@@ -11,7 +11,7 @@ const Languages = () => {
             <div className={classes['languages-list-container']}>
                 <Language name={'Spanish'} ratingPercentage={100}></Language>
                 <Language name={'English'} ratingPercentage={80}></Language>
-                <Language name={'German'} ratingPercentage={33}></Language>
+                <Language name={'German'} ratingPercentage={43}></Language>
             </div>
         </div>
     );
