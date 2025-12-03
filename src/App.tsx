@@ -12,6 +12,7 @@ import NavBar from './components/UI/NavBar/NavBar';
 import Technologies from './components/Sections/Technologies/Technologies';
 import Languages from './components/Sections/Languages/Languages';
 import SectionsContextProvider, { SectionIds } from './store/sections/sections-provider';
+import ChatMe from './components/Sections/ChatMe/ChatMe';
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
         </PageSection>
         <PageSection  innerKey={SectionIds.AboutMe} >
           <AboutMe />
+        </PageSection>
+        <PageSection  innerKey={SectionIds.ChatMe} >
+          <ChatMe />
         </PageSection>
       </div>
 

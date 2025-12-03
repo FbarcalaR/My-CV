@@ -26,6 +26,9 @@ const NavBar: FunctionComponent = () => {
         <NavBarButton id={SectionIds.AboutMe} usesDecorators={true}>
           ABOUT ME
         </NavBarButton>
+        <NavBarButton id={SectionIds.ChatMe} usesDecorators={true}>
+          CHAT ME (AI)
+        </NavBarButton>
       </div>
     </div>
   );

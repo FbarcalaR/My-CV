@@ -12,6 +12,7 @@ export enum SectionIds {
     Skills = 'skills',
     Projects = 'projects',
     AboutMe = 'about-me',
+    ChatMe = 'chat-me',
 }
 
 const sections = new Map<string, React.RefObject<any>>();
