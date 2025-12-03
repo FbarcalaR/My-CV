@@ -84,12 +84,10 @@ GUIDELINES:
 export async function POST(request: Request) {
     const { messages } = await request.json();
 
-    // Check if API key is set
     if (!process.env.OPENAI_API_KEY) {
         return new Response('Server configuration error. Please contact the administrator.', { status: 500 })
     }
 
-    // Call OpenAI API
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
