@@ -1,3 +1,4 @@
+'use client'
 import React, { FunctionComponent } from 'react';
 import Tooltip from '../../../UI/Tooltip/Tooltip';
 import classes from './Technology.module.css';

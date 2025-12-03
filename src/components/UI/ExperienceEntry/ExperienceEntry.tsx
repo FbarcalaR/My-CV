@@ -1,3 +1,4 @@
+'use client'
 import React, { FunctionComponent, useEffect, useRef } from 'react';
 import useIsElementOnScreen from '../../../hooks/useIsElementOnScreen';
 import classes from './ExperienceEntry.module.css';
@@ -35,9 +36,9 @@ const ExperienceEntry: FunctionComponent<Props> = (props) => {
                 <span className={`${classes['experience-date']} font-body`}>{props.date}</span>
             </div>
             <div ref={bodyDiv} className={`${classes['experience-body']} font-body ${classes['shift-effect']}`} >
-                <p>
+                <div>
                     {props.children}
-                </p>
+                </div>
             </div>
         </div>
     );

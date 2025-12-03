@@ -1,7 +1,9 @@
+'use client'
 import React, { useEffect, useRef } from 'react';
-import myPicture from '../../../assets/me.jpg';
+import myPicture from '@/assets/me.jpg';
 import useIsElementOnScreen from '../../../hooks/useIsElementOnScreen';
 import classes from './AboutMe.module.css';
+import Image from 'next/image';
 
 const AboutMe = () => {
     const containerDiv = useRef<HTMLDivElement>(null);
@@ -24,7 +26,7 @@ const AboutMe = () => {
 
     return (
         <div ref={containerDiv} className={classes['about-me-container']}>
-            <img ref={imageElement} src={myPicture} alt='me' className={`${classes['shift-effect']} ${classes['from-left']}`} ></img>
+            <Image ref={imageElement} src={myPicture} alt='me' className={`${classes['shift-effect']} ${classes['from-left']}`} ></Image>
             <p ref={bodyDiv} className={`font-body ${classes['shift-effect']} ${classes['from-right']}`}>
                 Software Engineer with 6+ years of experience developing web and mobile applications using .NET, React, Angular, SQL, 
                 and modern system architectures and principles like microservices, DDD or CI/CD.

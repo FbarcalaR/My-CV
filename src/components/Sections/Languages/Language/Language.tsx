@@ -1,3 +1,4 @@
+'use client'
 import React, { FunctionComponent, useEffect, useRef } from 'react';
 import useIsElementOnScreen from '../../../../hooks/useIsElementOnScreen';
 import classes from './Language.module.css';

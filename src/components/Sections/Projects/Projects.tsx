@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import TitleSection from '../../UI/TitleSection/TitleSection';
 import classes from './Projects.module.css';
