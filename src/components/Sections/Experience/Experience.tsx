@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import classes from './Experience.module.css';
 import TitleSection from '../../UI/TitleSection/TitleSection';

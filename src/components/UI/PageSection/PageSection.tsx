@@ -1,10 +1,11 @@
+'use client'
 import React, { FunctionComponent, useContext, useEffect, useRef } from "react";
 import useIsElementOnScreen from "../../../hooks/useIsElementOnScreen";
 import { SectionsContext } from "../../../store/sections/sections-context";
 import classes from "./PageSection.module.css";
 
 interface Props {
-    innerKey?: string;
+    sectionKey?: string;
     children?: React.ReactNode;
 };
 
@@ -14,19 +15,19 @@ const PageSection: FunctionComponent<Props> = (props) => {
     const isSectionVisible = useIsElementOnScreen(sectionDivRef);
 
     useEffect(() => {
-        if (props.innerKey)
-            sections.set(props.innerKey, sectionDivRef);
+        if (props.sectionKey)
+            sections.set(props.sectionKey, sectionDivRef);
 
         return () => {
-            if (props.innerKey)
-                sections.delete(props.innerKey);
+            if (props.sectionKey)
+                sections.delete(props.sectionKey);
         }
-    }, [props.innerKey , sections]);
+    }, [props.sectionKey , sections]);
 
     useEffect(()=>{
-        if (props.innerKey && isSectionVisible)
-            setActiveButton(props.innerKey)
-    }, [isSectionVisible, props.innerKey, setActiveButton])
+        if (props.sectionKey && isSectionVisible)
+            setActiveButton(props.sectionKey)
+    }, [isSectionVisible, props.sectionKey, setActiveButton])
 
     return (
         <div ref={sectionDivRef} className={classes.section}>{props.children}</div>

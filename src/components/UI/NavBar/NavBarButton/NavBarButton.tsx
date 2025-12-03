@@ -1,3 +1,4 @@
+'use client'
 import React, { FunctionComponent, useContext, useEffect, useMemo, useRef } from 'react';
 import { SectionsContext } from '../../../../store/sections/sections-context';
 import classes from "./NavBarButton.module.css";

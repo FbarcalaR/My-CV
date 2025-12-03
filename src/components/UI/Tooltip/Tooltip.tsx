@@ -1,3 +1,4 @@
+'use client'
 import Tippy from '@tippyjs/react';
 import {roundArrow} from 'tippy.js';
 import React, { FunctionComponent, ReactElement } from 'react';

@@ -1,3 +1,4 @@
+'use client'
 import React, { FunctionComponent, useEffect, useRef } from 'react';
 import classes from './Project.module.css';
 import InsertLinkIcon from '@mui/icons-material/InsertLink';

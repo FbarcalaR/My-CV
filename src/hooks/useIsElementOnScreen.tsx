@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useState } from 'react';
 
 const useIsElementOnScreen = (ref: React.RefObject<any>, threshold=0.65) => {

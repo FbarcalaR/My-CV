@@ -1,0 +1,220 @@
+.shift-effect {
+    visibility: hidden;
+    transform: translateY(50vh);
+    transition: transform 0.8s ease-out;
+}
+
+.chat-me-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 1024px) {
+    .chat-me-container {
+        width: 60%;
+    }
+}
+
+.chat-box {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    background-color: var(--tooltip-background-color);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border: 1px solid var(--horizontal-divider-color);
+}
+
+@media only screen and (min-width: 768px) {
+    .chat-box {
+        height: 600px;
+    }
+}
+
+.messages-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.messages-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.messages-container::-webkit-scrollbar-track {
+    background: var(--background-color);
+    border-radius: 4px;
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+    background: var(--horizontal-divider-color);
+    border-radius: 4px;
+}
+
+.messages-container::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-disabled-color);
+}
+
+.message {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-message {
+    flex-direction: row-reverse;
+}
+
+.message-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.user-message .message-icon {
+    background-color: var(--highlighted-element-color);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    color: var(--primary-color);
+}
+
+.message-content {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.5;
+    word-wrap: break-word;
+    max-width: 75%;
+}
+
+.user-message .message-content {
+    background-color: var(--highlighted-element-color);
+    color: var(--primary-color);
+}
+
+.loading {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    min-height: 24px;
+}
+
+.dot {
+    animation: pulse 1.4s ease-in-out infinite;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+    0%, 60%, 100% {
+        opacity: 0.3;
+    }
+    30% {
+        opacity: 1;
+    }
+}
+
+.input-container {
+    display: flex;
+    gap: 12px;
+    padding: 20px;
+    border-top: 1px solid var(--horizontal-divider-color);
+    background-color: var(--background-color);
+    border-radius: 0 0 12px 12px;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid var(--horizontal-divider-color);
+    border-radius: 8px;
+    background-color: var(--tooltip-background-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.chat-input::placeholder {
+    color: var(--primary-disabled-color);
+}
+
+.chat-input:focus {
+    border-color: var(--highlighted-element-color);
+}
+
+.chat-input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.send-button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--highlighted-element-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.send-button:hover:not(:disabled) {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.send-button:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+.send-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.send-icon {
+    width: 20px;
+    height: 20px;
+}

@@ -1,7 +1,8 @@
+'use client'
 import React, { FunctionComponent } from 'react';
 import NavBarButton from './NavBarButton/NavBarButton';
 import classes from "./NavBar.module.css";
-import { SectionIds } from '../../../store/sections/sections-provider';
+import { SectionIds } from '@/store/sections/SectionIds';
 import HomeIcon from '@mui/icons-material/Home';
 
 const NavBar: FunctionComponent = () => {
@@ -25,6 +26,9 @@ const NavBar: FunctionComponent = () => {
         </NavBarButton>
         <NavBarButton id={SectionIds.AboutMe} usesDecorators={true}>
           ABOUT ME
+        </NavBarButton>
+        <NavBarButton id={SectionIds.ChatMe} usesDecorators={true}>
+          CHAT ME (AI)
         </NavBarButton>
       </div>
     </div>
