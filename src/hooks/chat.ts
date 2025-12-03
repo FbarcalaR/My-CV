@@ -5,7 +5,7 @@ export function useSendChatMessage() {
   return useCallback(async (messages: any)=> {
       try {
           // Call our backend API instead of OpenAI directly
-          const response = await fetch('http://localhost:3000/api/chat', {
+          const response = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/chat`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
